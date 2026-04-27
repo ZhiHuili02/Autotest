@@ -1,0 +1,8 @@
+[{"description": "这是我们第一个mock123例子",
+  "request": {
+    "uri":"/demo",
+    "method": "post"
+  },
+  "response":{"text": "第一个moco框架demo123"
+  }
+}]

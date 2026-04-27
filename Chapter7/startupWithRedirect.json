@@ -1,0 +1,21 @@
+[
+  {
+    "description": "重定向到一个自己的网页上",
+    "request": {
+      "uri": "/redirect/topath"
+    },
+    "redirectTo": "/redirect/new"
+  },
+  {"description": "被重新定向的网址",
+    "request":{
+    "uri": "/redirect/new"
+
+  },
+    "redirectTo": "http://www.baidu.com"
+
+
+  }
+
+
+
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suite name">
+    <test name="runAll">
+        <classes>
+            <class name="groups.GroupsOnClass1"/>
+            <class name="groups.GroupsOnClass2"/>
+            <class name="groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+    <test name="onlyRunStu">
+            <groups>//进入group筛选
+                <run>//筛选
+                    <include name="stu"/>//条件
+                </run>
+            </groups>
+    <classes>
+        <class name="groups.GroupsOnClass1"/>
+        <class name="groups.GroupsOnClass2"/>
+        <class name="groups.GroupsOnClass3"/>
+    </classes>
+    </test>
+</suite>

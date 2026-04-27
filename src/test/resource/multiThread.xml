@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="thread" parallel="tests" thread-count="2">
+    <!--test级别:不同的test tag下的用例在不同的线程中运行
+    相同的则只能在同一个线程中运行
+
+    classs级别:相同的class tag 都可以在同一的线程中执行
+    不同的classs在不同的线程中执行
+
+    method级别:所有用例都可以在不同的线程下执行
+
+    thread-count代表最大用例
+
+    xml不能规定线程池,在方法中才可以,ThreadPoolSize=3
+
+
+    -->
+    <test name="demo1">
+        <classes>
+            <class name="multiThread.MultiThreadOnXml"/>
+        </classes>
+    </test>
+
+<test name="demo2">
+<classes>
+    <class name="multiThread.MultiThreadOnXml"/>
+</classes>
+</test>
+    <test name="demo3" parallel="tests" thread-count="2">
+        <classes>
+            <class name="com.course.testng.BasicAnnotation"/>
+        </classes>
+    </test>
+        </suite>
